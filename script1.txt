@@ -1,0 +1,9 @@
+<?php declare(strict_types=1);
+$validator=new HTML5Validate();
+
+// Validate (returns TRUE or FALSE)
+$result=$validator->assertEquals('<p style="color:red;font-size:35px;text-align:center"><b><i> Welcome
+To My </i></b></p>');
+
+// Get explanation of what's wrong (if validation failed)
+print $validator->message ("Error");
